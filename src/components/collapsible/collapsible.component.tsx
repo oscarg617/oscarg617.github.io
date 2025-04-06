@@ -1,11 +1,6 @@
 import React, { useState } from 'react'
-import { CButton, CCollapse, CCard, CCardBody } from '@coreui/react'
+import { CButton, CCollapse, CCardBody } from '@coreui/react'
 import '@coreui/coreui/dist/css/coreui.min.css';
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 
 
 interface CollapsibleProps {
