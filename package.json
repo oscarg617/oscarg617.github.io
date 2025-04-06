@@ -1,6 +1,7 @@
 {
   "name": "oscarg617.github.io",
   "version": "0.1.0",
+  "homepage": "https://oscarg617.github.io",
   "private": true,
   "dependencies": {
     "@coreui/coreui": "^5.2.0",
@@ -30,6 +31,7 @@
     "font-awesome": "^4.7.0",
     "fontawesome": "^5.6.3",
     "fortawesome": "^0.0.1-security",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.487.0",
     "mui": "^0.0.1",
     "react": "^19.1.0",
@@ -42,6 +44,8 @@
     "zod": "^3.24.2"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
