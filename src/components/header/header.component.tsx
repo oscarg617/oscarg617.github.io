@@ -1,22 +1,38 @@
+import React, { useState } from 'react';
+
+import Oscar from '../../assets/oscar.jpg'
+import Kobe from '../../assets/kobe.gif'
+import LeBron from '../../assets/lebron.gif'
+
+
 import './header.styles.css'
-import location from '../../assets/location.svg'
-import snow from '../../assets/snow.jpg'
-import ned from '../../assets/NedStark.webp'
 
 const Header = () => {
+
+    const [currImage, setImage] = useState(Oscar);
+
+    var images = [
+        Kobe,
+        LeBron
+    ]
+
+    function randomImage () {
+        var randomNumber = Math.floor(Math.random() * images.length);
+        var randomImage = images[randomNumber];
+        setImage(randomImage);
+    }
+
+    function defaultImage () {
+        setImage(Oscar);
+    }
+
     return (
         <div className='header-container'>
-            <div className='header'>
-                <h1>Oscar Gutierrez</h1>
-                <h3>22 year-old software engineer with a knack for being bad at video games</h3>
-                {/* <h3>0.83 Warzone K/D</h3> */}
-                <div className='location'>
-                    <img src={location} alt='location' width="16"/>
-                    <h4>Jurupa Valley, CA</h4>
-                </div>
-            </div>
-            <div>
-                <img src={ned} alt='snow' height="300" />
+            <img className='image-container' src={currImage} alt='' />
+            <div className='header-wrapper'>
+                <h1 className='name-header' >Oscar Gutierrez</h1>
+                <p className='my-desc' >22 year-old software engineer with a knack for being bad at video games.</p>
+                <p className='my-desc' >I like applying my developer skills to my interests, playing with my dog, and trying to improve my <span className='kd-ratio' onMouseOver={randomImage} onMouseLeave={defaultImage}>0.83 K/D</span> in Warzone.</p>
             </div>
         </div>
     )
