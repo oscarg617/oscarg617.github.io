@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fa6c0c2c.css",
+    "main.js": "/static/js/main.8ac3dd79.js",
+    "static/js/453.8428be22.chunk.js": "/static/js/453.8428be22.chunk.js",
+    "static/media/oscar.jpg": "/static/media/oscar.35225f49241bf717c6d2.jpg",
+    "static/media/kobe.gif": "/static/media/kobe.1261630c20b2b43feef2.gif",
+    "static/media/lebron.gif": "/static/media/lebron.c4206b248cb2cc60e2ea.gif",
+    "static/media/cs189.png": "/static/media/cs189.7a367de93e28824ff958.png",
+    "static/media/cs164.png": "/static/media/cs164.ed1ff47cdfa0f60da678.png",
+    "static/media/cs162.png": "/static/media/cs162.c6d9ac944ce580623f69.png",
+    "static/media/berkeley.webp": "/static/media/berkeley.ed223388dec59551be0b.webp",
+    "static/media/cs161.png": "/static/media/cs161.80588c65f601acaa0e2b.png",
+    "static/media/cs186.png": "/static/media/cs186.84c7ec5f39a6ded196a5.png",
+    "static/media/location.png": "/static/media/location.cdc6552fc9574813aa7f.png",
+    "static/media/rma.svg": "/static/media/rma.b21284c211f4945acaf0df338b2776c0.svg",
+    "index.html": "/index.html",
+    "main.fa6c0c2c.css.map": "/static/css/main.fa6c0c2c.css.map",
+    "main.8ac3dd79.js.map": "/static/js/main.8ac3dd79.js.map",
+    "453.8428be22.chunk.js.map": "/static/js/453.8428be22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa6c0c2c.css",
+    "static/js/main.8ac3dd79.js"
+  ]
+}
