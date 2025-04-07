@@ -1,13 +1,13 @@
-import Header from './components/header/header.component';
+import Intro from './components/intro/intro.component';
 import Footer from './components/footer/footer.component';
 import Education from './components/education/education.component';
 import Experience from './components/experience/experience.component';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-        <Header />
+        <Intro />
         <Footer />
         <Experience />
         <Education />
