@@ -7,7 +7,7 @@ import LeBron from '../../assets/lebron.gif'
 
 import './intro.styles.scss'
 
-const Header = () => {
+const Intro = () => {
 
     const [currImage, setImage] = useState(Oscar);
 
@@ -27,10 +27,11 @@ const Header = () => {
     }
 
     return (
-        <div className='header-container'>
+        <div className='intro-container'>
+            <div></div>
             <img className='image-container' src={currImage} alt='' />
-            <div className='header-wrapper'>
-                <h1 className='name-header' >Oscar Gutierrez</h1>
+            <div className='intro-wrapper'>
+                <h1 className='name-intro' >Oscar Gutierrez</h1>
                 <p className='my-desc' >22 year-old software engineer with a knack for being bad at video games.</p>
                 <p className='my-desc' >I like applying my developer skills to my interests, playing with my dog, and trying to improve my <span className='kd-ratio' onMouseOver={randomImage} onMouseLeave={defaultImage}>0.83 K/D</span> in Warzone.</p>
             </div>
@@ -38,4 +39,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Intro

@@ -1,13 +1,13 @@
-.header-container {
-    padding-top: 10%;
+.intro-container {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     align-items: start;
-    justify-content: start;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.header-wrapper {
+.intro-wrapper {
     color: #282c34;
     display: flex;
     justify-content: left;
@@ -18,16 +18,16 @@
 .image-container {
     height: 150px;
     width: 150px;
-    /* margin-left: 100px; */
     object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 .kd-ratio {
     background-color: #fff8ce;
 }
 
-.name-header {
+.name-intro {
     margin: 0;
     padding: 0;
     padding-bottom: 15px;
