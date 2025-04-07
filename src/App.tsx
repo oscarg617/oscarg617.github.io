@@ -1,18 +1,20 @@
-import Intro from './components/intro/intro.component';
-import Footer from './components/footer/footer.component';
-import Education from './components/education/education.component';
-import Experience from './components/experience/experience.component';
+import { Routes, Route } from 'react-router-dom'
+import Home from './routes/home/home.component';
+import Header from './routes/header/header.component';
+import Projects from './routes/projects/projects.component';
+import Blog from './routes/blog/blog.component';
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <Intro />
-        <Footer />
-        <Experience />
-        <Education />
-    </div>
-  );
+    <Routes>
+      <Route path='/' element={<Header />}>
+        <Route index element={<Home />}></Route>
+        <Route path='projects' element={<Projects />}></Route>
+        <Route path='blog' element={<Blog />}></Route>
+      </Route>
+    </Routes>
+  )
 }
 
 export default App;
