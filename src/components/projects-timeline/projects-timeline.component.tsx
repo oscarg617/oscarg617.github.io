@@ -8,6 +8,7 @@ import cs164 from '../../assets/cs164.png'
 import cs186 from '../../assets/cs186.png'
 import cs189 from '../../assets/cs189.png'
 
+import './projects-timeline.styles.scss'
 
 const ProjectsTimeline = () => {
 
@@ -62,7 +63,7 @@ const ProjectsTimeline = () => {
                 <Typography className='tl-type' variant="body2" component="span" px={{ color: "gray" }} >
                     {project.class}
                 </Typography>
-                <Typography className='tl-type' variant="subtitle1" px={{ color: "black" }} >
+                <Typography className='tl-type project-title' variant="subtitle1" px={{ color: "black" }} >
                     {project.projectName}
                 </Typography>
                 <ul>

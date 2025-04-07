@@ -10,7 +10,7 @@ import Icon from '@material-ui/core/Icon';
 import rma from '../../assets/rma.svg';
 import { CCollapse, CCard, CCardBody } from '@coreui/react';
 
-import './experience.styles.css'
+import './experience.styles.scss'
 
 
 const Experience = () => {
@@ -38,7 +38,7 @@ const Experience = () => {
                         <Typography className='tl-type' variant="body2" component="span" px={{ color: "gray" }} >
                             June 2023 - Aug 2023
                         </Typography>
-                        <Typography className='tl-type' variant="subtitle1" px={{ color: "black" }} >
+                        <Typography className='tl-type title' variant="subtitle1" px={{ color: "black" }} >
                             Risk Management Association
                         </Typography>
                         <Typography className='tl-type' variant="subtitle2" px={{ color: "gray" }} >

@@ -1,0 +1,85 @@
+.experience {
+    margin-top: 50px;
+}
+
+.tl-item {
+
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+    /* display; */
+    /* justify-content: start; */
+    max-width: 700px;
+    
+    .tl-sep {
+        margin: 0;
+        padding: 0;
+        
+        .tl-con {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            
+        }
+        
+        .tl-dot {
+            
+            margin: 0;
+            padding: 0;
+            
+            .timeline-icon {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 55px;
+                height: 55px;
+                
+                .svg-image {
+                    /* transform: scale(0.5); */
+                    width: 55px;
+                    height: auto;
+                    background-size: contain;
+                }
+                .svg-image-rma {
+                    /* transform: scale(0.5); */
+                    width: 42px;
+                    height: auto;
+                    background-size: contain;
+                }
+            }
+
+        }
+    }
+
+    
+    .tl-cont {
+        margin: 0;
+        padding: 0;
+        margin-left: 30px;
+
+        .project-title {
+            font-weight: 501;
+        }
+
+        ul {
+            padding: 0;
+            padding-left: 1em;
+            font-size: 0.9rem;
+            list-style: disc;
+        }
+
+        .last {
+            padding-bottom: 10px;
+        }
+
+        h4 {
+            padding-bottom: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+
+}

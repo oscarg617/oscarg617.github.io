@@ -1,7 +1,7 @@
 import Socials from "../socials/socials.component"
 import location from '../../assets/location.png'
 
-import './footer.styles.css'
+import './footer.styles.scss'
 
 const Footer = () => {
     return (

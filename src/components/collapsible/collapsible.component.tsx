@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { CButton, CCollapse, CCardBody } from '@coreui/react'
 import '@coreui/coreui/dist/css/coreui.min.css';
+import './collapsible.styles.scss'
 
 
 interface CollapsibleProps {

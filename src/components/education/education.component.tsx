@@ -11,7 +11,7 @@ import berkeley from '../../assets/berkeley.webp'
 
 import { CCollapse, CCard, CCardBody } from '@coreui/react';
 
-import './education.styles.css'
+import './education.styles.scss'
 import ProjectsTimeline from '../projects-timeline/projects-timeline.component';
 
 export default function Education() {
@@ -40,7 +40,7 @@ export default function Education() {
               <Typography className='tl-type' variant="body2" component="span" px={{ color: "gray" }} >
                 Aug 2020 - Dec 2024
               </Typography>
-              <Typography className='tl-type' variant="subtitle1" px={{ color: "black" }} >
+              <Typography className='tl-type title' variant="subtitle1" px={{ color: "black" }} >
                 University of California, Berkeley
               </Typography>
               <Typography className='tl-type' variant="subtitle2" px={{ color: "gray" }} >
@@ -48,8 +48,11 @@ export default function Education() {
               </Typography>
               <ul>
                 <li>
-                  Relevant coursework: Programming Languages, Databases, Computer Architecture, Machine Learning, Computer Security, Operating Systems, Efficient Algorithms
+                  Upper-division GPA: 3.7
                 </li>
+                {/* <li>
+                  Relevant coursework: Programming Languages, Databases, Computer Architecture, Machine Learning, Computer Security, Operating Systems, Efficient Algorithms
+                </li> */}
               </ul>
             </TimelineContent>
           </TimelineItem>
