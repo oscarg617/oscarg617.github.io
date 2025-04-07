@@ -46,21 +46,11 @@ const Experience = () => {
                         </Typography>
                         <ul>
                             <li>
-                                Modernized methods of financial record submissions by streamlining financial statements from partnered
-                                vendor's third-party API using AWS API Gateway and Lambda (Python)
+                            Developed a financial record processing backend to enable vendors to submit records directly from their systems using AWS API Gateway and MySQL 
                             </li>
-                            {/* <li>
-                            Optimized validations on records using Pandas to provide rejection codes that indicate untrustworthy record
-                            structure, reducing submission time by 15%
-                            </li> */}
                             <li>
-                                Delivered and presented best practices in cloud services in a proof of concept API to the CPO and 5 senior
-                                managers, initiating the partnership with two vendors
+                            Implemented a data validation system to detect untrustworthy record structures using a Python Lambda integration with Pandas
                             </li>
-                            {/* <li>
-                            Redesigned MySQL database to allow for more efficient API communication by creating stored procedures and
-                            indexes, reducing query execution time by 10%
-                            </li> */}
                         </ul>
                     </TimelineContent>
                 </TimelineItem>
