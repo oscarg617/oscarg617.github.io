@@ -1,0 +1,39 @@
+.my-header {
+    background-color: white;
+    opacity: 0.95;
+    padding: 23px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    // width: 100%;
+    top: 0;
+    z-index: 10000;
+    font-size: 1.15rem;
+
+    .my-nav {
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+        .nav-list {
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+            justify-content: space-between;
+
+            .nav-list-item {
+                padding-right: 20px;
+
+                .nav-link {
+                    text-decoration: none;
+                    color: gray;
+                }
+
+                .nav-link:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
