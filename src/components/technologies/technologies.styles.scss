@@ -1,0 +1,45 @@
+.technologies {
+    margin-top: 50px;
+    max-width: 100%;
+    flex-wrap: wrap;
+
+    .tech-list {
+        
+        margin-top: 10px;
+        max-width: 100%;
+        display: flex;
+        // justify-content: space-between;
+        flex-wrap: wrap;
+
+        .tech-container {
+            background-color: #eeeeee;
+            border-radius: 15px;
+            margin: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 85px;
+            height: 85px;
+
+            .my-tech-item {
+                display: flex;
+
+                padding: 5px;
+                width: 55px;
+                height: 55px;
+                margin: 5px 7px;
+                margin-top: 0;
+            }
+
+            .tech-title {
+                text-align: center;
+                padding: 0;
+                // font-weight: 501;
+                font-size: 0.9rem;
+            }
+        }
+        
+    }
+
+}
