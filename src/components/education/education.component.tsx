@@ -22,28 +22,28 @@ export default function Education() {
       <CCollapse visible={true}>
       <CCard>
       <CCardBody>
-        <Timeline  position="right">
-          <TimelineItem className='tl-item' >
+        <Timeline  position="right" sx={{ padding: '0px' }}>
+          <TimelineItem className='edu-tl-item' >
             <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
-            <TimelineSeparator className='tl-sep' sx={{ margin: "50px" }}>
-              <TimelineConnector  className='tl-con' sx={{ py: "10px" }} />
+            <TimelineSeparator className='edu-tl-sep' sx={{ margin: "50px" }}>
+              <TimelineConnector  className='edu-tl-con' sx={{ py: "10px" }} />
               <div>
-                <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='tl-dot' >
-                  <Icon className='timeline-icon'>
-                    <img className='svg-image' src={berkeley} alt=""/>
+                <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='edu-tl-dot' >
+                  <Icon className='edu-timeline-icon'>
+                    <img className='edu-svg-image' src={berkeley} alt=""/>
                   </Icon>
                 </TimelineDot>
               </div>
               <TimelineConnector sx={{ py: '10px' }}/>
             </TimelineSeparator>
-            <TimelineContent className='tl-cont' sx={{ py: '25px', px: 2 }}>
-              <Typography className='tl-type' variant="body2" component="span" px={{ color: "gray" }} >
+            <TimelineContent className='edu-tl-cont' sx={{ py: '25px', px: 2 }}>
+              <Typography className='edu-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
                 Aug 2020 - Dec 2024
               </Typography>
-              <Typography className='tl-type title' variant="subtitle1" px={{ color: "black" }} >
+              <Typography className='edu-tl-type ed-title' variant="subtitle1" px={{ color: "black" }} >
                 University of California, Berkeley
               </Typography>
-              <Typography className='tl-type' variant="subtitle2" px={{ color: "gray" }} >
+              <Typography className='edu-tl-type' variant="subtitle2" px={{ color: "gray" }} >
                 BS in Electrical Engineering and Computer Science
               </Typography>
               <ul>
