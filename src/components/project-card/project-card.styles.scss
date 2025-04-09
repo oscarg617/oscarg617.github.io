@@ -1,0 +1,98 @@
+.project-card-container {
+    margin: 10px 0px;
+
+    .projects-button {
+
+        text-decoration: none;
+        
+        .projects-card {
+
+            // border: gray;
+            font-size: 1em;
+            
+            .project-card-heading {
+                display: flex;
+                align-items: center;
+                
+                .project-card-heading-item {
+                    font-size: 1.5em;
+                    font-weight: 501;
+                    margin-right: 20px;
+                    text-decoration: none;
+                }
+                
+            }
+            
+            .project-card-footer {
+                
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                
+                .project-card-tech-list {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-bottom: 10px;
+                    
+                    .project-card-tech {
+                        margin: 0;
+                        padding: 0;
+                        background-color: #eeeeee;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        padding: 4px 6px;
+                        border-radius: 5px;
+                    }
+
+                    .project-card-link {
+                        color: white;
+                        padding: 4px 6px;
+                        text-decoration: none;
+                        border-radius: 5px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        
+                    }
+                    .project-card-link:hover {
+                        color: white;
+                    }
+
+                    .source-code {
+                        background-color: rgb(16, 96, 16);
+                    }
+
+                    .website {
+                        background-color: rgb(181, 0, 0);
+                    }
+
+                    .pypi-package {
+                        background-color: rgb(0, 0, 119);
+                    }
+
+                    .source-code:hover {
+                        background-color: rgb(7, 179, 7);
+                    }
+
+                    .website:hover {
+                        background-color: red;
+                    }
+
+                    .pypi-package:hover {
+                        background-color: blue;
+                    }
+                    
+                }
+            }
+        }
+
+        .projects-card:hover {
+            border-color: black;
+            // font-size: 1.001em;
+        }
+
+    }
+    
+}
