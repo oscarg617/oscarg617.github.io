@@ -10,6 +10,7 @@ const Footer = () => {
                 <img className='location-image' src={location} alt='location'/>
                 <p className="my-location" >Jurupa Valley, CA</p>
             </div>
+            <div></div>
             <Socials/>
 
         </div>
