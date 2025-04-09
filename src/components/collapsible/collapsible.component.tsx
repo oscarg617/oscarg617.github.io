@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { CButton, CCollapse, CCardBody } from '@coreui/react'
+import { CButton, CCollapse } from '@coreui/react'
 import '@coreui/coreui/dist/css/coreui.min.css';
 import './collapsible.styles.scss'
 
@@ -24,13 +24,10 @@ export const Collapsible: React.FC<CollapsibleProps> = ({ children, label }) => 
         style={{marginLeft:"0", marginBottom: "10px", backgroundColor: "#eeeeee", color: "black"}}
         className='projects-button'
       >
-        
         {label}
       </CButton>
       <CCollapse visible={visible}>
-          <CCardBody>
             {children}
-          </CCardBody>
       </CCollapse>
     </div>
   )
