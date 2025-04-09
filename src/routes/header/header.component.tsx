@@ -8,7 +8,7 @@ import './header.styles.scss'
 const navLinks = [
   { name: "home", href: "/", },
   { name: "projects", href: "/projects", },
-  { name: "blog", href: "/blog", }
+  // { name: "blog", href: "/blog", }
 ];
 
 const Header = () => {
