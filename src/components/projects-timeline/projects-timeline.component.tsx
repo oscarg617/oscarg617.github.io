@@ -46,24 +46,24 @@ const ProjectsTimeline = () => {
     ];
 
     const projectItems = projects.map((project) => (
-        <TimelineItem className='tl-item' >
+        <TimelineItem className='proj-tl-item' >
             <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
-            <TimelineSeparator className='tl-sep' sx={{ margin: "50px" }}>
-                <TimelineConnector  className='tl-con' sx={{ py: "1005px" }} />
+            <TimelineSeparator className='proj-tl-sep' >
+                <TimelineConnector  className='proj-tl-con' />
                 <div>
-                    <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='tl-dot' >
-                        <Icon className='timeline-icon'>
-                            <img className='svg-image' src={project.image} alt=""/>
+                    <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='proj-tl-dot' >
+                        <Icon className='proj-timeline-icon'>
+                            <img className='proj-svg-image' src={project.image} alt=""/>
                         </Icon>
                     </TimelineDot>
                 </div>
                 <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent className='tl-cont' sx={{ py: '25px', px: 2 }}>
-                <Typography className='tl-type' variant="body2" component="span" px={{ color: "gray" }} >
+            <TimelineContent className='proj-tl-cont' sx={{ py: '25px', px: 2 }}>
+                <Typography className='proj-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
                     {project.class}
                 </Typography>
-                <Typography className='tl-type project-title' variant="subtitle1" px={{ color: "black" }} >
+                <Typography className='proj-tl-type proj-title' variant="subtitle1" px={{ color: "black" }} >
                     {project.projectName}
                 </Typography>
                 <ul>
