@@ -1,0 +1,95 @@
+.project-post {
+
+    .project-post-title {
+        font-size: 2.5em;
+        font-weight: 700;
+        margin-right: 20px;
+        text-decoration: none;
+    }
+
+    .project-post-description {
+
+    }
+
+    .project-post-tech-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        
+        .project-post-tech {
+            margin: 0;
+            padding: 0;
+            background-color: #eeeeee;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 4px 6px;
+            border-radius: 5px;
+        }
+
+        .project-post-link {
+            color: white;
+            padding: 4px 6px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            
+        }
+        .project-post-link:hover {
+            color: white;
+        }
+
+        .source-code {
+            background-color: rgb(16, 96, 16);
+        }
+
+        .website {
+            background-color: rgb(181, 0, 0);
+        }
+
+        .pypi-package {
+            background-color: rgb(0, 0, 119);
+        }
+
+        .source-code:hover {
+            background-color: rgb(7, 179, 7);
+        }
+
+        .website:hover {
+            background-color: red;
+        }
+
+        .pypi-package:hover {
+            background-color: blue;
+        }
+        
+    }
+
+
+    .project-post-motive {
+        margin-top: 25px;
+    }
+
+    .project-post-challenges {
+        margin-top: 50px;
+    }
+
+    .project-post-key-learnings {
+        margin-top: 50px;
+    }
+
+    .project-post-future-improvements {
+        margin-top: 50px;
+    }
+
+    .project-post-updates {
+        margin-top: 50px;
+
+        .project-post-update {
+            margin-top: 25px;
+        }
+    }
+}
