@@ -20,28 +20,28 @@ const Experience = () => {
         <CCollapse visible={true} >
         <CCard>
         <CCardBody>
-            <Timeline  position="right">
-                <TimelineItem className='tl-item' >
+            <Timeline  position="right" sx={{ padding: '0px' }}>
+                <TimelineItem className='exp-tl-item'  >
                     <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
-                    <TimelineSeparator className='tl-sep' sx={{ margin: "50px" }}>
-                        <TimelineConnector  className='tl-con' sx={{ py: "1005px" }} />
+                    <TimelineSeparator className='exp-tl-sep' >
+                        <TimelineConnector  className='exp-tl-con' />
                         <div>
-                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='tl-dot' >
-                                <Icon className='timeline-icon'>
-                                    <img className='svg-image-rma' src={rma} alt=""/>
+                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='exp-tl-dot' >
+                                <Icon className='exp-timeline-icon'>
+                                    <img className='exp-svg-image-rma' src={rma} alt=""/>
                                 </Icon>
                             </TimelineDot>
                         </div>
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent className='tl-cont' sx={{ py: '25px', px: 2 }}>
-                        <Typography className='tl-type' variant="body2" component="span" px={{ color: "gray" }} >
+                    <TimelineContent className='exp-tl-cont' sx={{ py: '25px', px: 2 }}>
+                        <Typography className='exp-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
                             June 2023 - Aug 2023
                         </Typography>
-                        <Typography className='tl-type title' variant="subtitle1" px={{ color: "black" }} >
+                        <Typography className='exp-tl-type exp-title' variant="subtitle1" px={{ color: "black" }} >
                             Risk Management Association
                         </Typography>
-                        <Typography className='tl-type' variant="subtitle2" px={{ color: "gray" }} >
+                        <Typography className='exp-tl-type' variant="subtitle2" px={{ color: "gray" }} >
                             Software Engineer Intern
                         </Typography>
                         <ul>
