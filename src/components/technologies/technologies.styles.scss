@@ -1,5 +1,5 @@
 .technologies {
-    margin-top: 50px;
+    margin-top: 10px;
     max-width: 100%;
     flex-wrap: wrap;
 
@@ -8,7 +8,6 @@
         margin-top: 10px;
         max-width: 100%;
         display: flex;
-        // justify-content: space-between;
         flex-wrap: wrap;
 
         .tech-container {
@@ -24,7 +23,6 @@
 
             .my-tech-item {
                 display: flex;
-
                 padding: 5px;
                 width: 55px;
                 height: 55px;
@@ -35,7 +33,6 @@
             .tech-title {
                 text-align: center;
                 padding: 0;
-                // font-weight: 501;
                 font-size: 0.9rem;
             }
         }
