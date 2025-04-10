@@ -1,12 +1,5 @@
 import {useEffect, useRef} from 'react'
-import React from 'react';
-import { ReactNode } from 'react';
-
-import {
-useLocation,
-useNavigate,
-useParams
-} from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 function withRouter(Component: any) {
 function ComponentWithRouterProp(props: any) {
