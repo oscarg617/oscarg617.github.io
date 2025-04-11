@@ -7,9 +7,9 @@
         text-decoration: none;
     }
 
-    .project-post-description {
+    // .project-post-description {
 
-    }
+    // }
 
     .project-post-tech-list {
         list-style: none;
@@ -73,23 +73,37 @@
         margin-top: 25px;
     }
 
+    .project-post-how-to {
+        margin-top: 25px;
+    }
+
+    .project-post-design-choices {
+        margin-top: 25px;
+    }
+
     .project-post-challenges {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .project-post-key-learnings {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .project-post-future-improvements {
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .project-post-updates {
-        margin-top: 50px;
+        margin-top: 25px;
 
         .project-post-update {
             margin-top: 25px;
         }
     }
+}
+
+pre {
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 0px 10px;
 }
