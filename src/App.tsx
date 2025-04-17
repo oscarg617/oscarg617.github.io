@@ -2,10 +2,10 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './routes/home/home.component';
 import Header from './routes/header/header.component';
 import Projects from './routes/projects/projects.component';
-import './App.scss';
-import ProjectTitle from './routes/project-post/project-post.component';
-import projectsData from './data/projects.json'
+import ProjectPost from './routes/project-post/project-post.component';
+import { projects } from './data/projects';
 
+import './App.scss';
 
 const App = () => {
 
@@ -16,8 +16,8 @@ const App = () => {
         <Route index element={<Home />}></Route>
         <Route path='projects' element={<Projects />}>
         </Route>
-          {projectsData.map((project) => (
-            <Route key={project.title} path={`projects/${project.title.toLowerCase()}`} element={<ProjectTitle {...project} />} ></Route>
+          {projects.map((project) => (
+            <Route key={project.title} path={`projects/${project.title.toLowerCase()}`} element={<ProjectPost {...project} />} ></Route>
           ))}
       </Route>
     </Routes>

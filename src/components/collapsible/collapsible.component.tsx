@@ -11,18 +11,22 @@ interface CollapsibleProps {
 
 export const Collapsible: React.FC<CollapsibleProps> = ({ children, label }) => {
   const [visible, setVisible] = useState(false)
+
+  
+
   return (
     <div>
 
       <CButton
-        color="black"
+        color="secondary"
         href="#"
         onClick={(event) => {
           event.preventDefault()
           setVisible(!visible)
         }}
-        style={{marginLeft:"0", marginBottom: "10px", backgroundColor: "#eeeeee", color: "black"}}
-        className='projects-button'
+        variant="outline"
+        style={{marginLeft:"0", marginBottom: "12px"}}
+        className='rounded-pill'
       >
         {label}
       </CButton>

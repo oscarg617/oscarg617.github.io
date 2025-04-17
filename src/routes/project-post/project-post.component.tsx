@@ -15,21 +15,23 @@ const PostContent : React.FC<contentType> = ({type, content}) => {
         return <pre>{content}</pre>
     } else if (type === "subheading") {
         return <h5>{content}</h5>
+    } else if (type === "image") {
+        return <img src={content} alt='' width={"100%"} style={{ borderRadius: "10px", border: "black 1px solid", marginBottom: "16px"}}/>   
     }
 }
 
-type projectCardProps  = {
+interface projectCardProps  {
     title: string,
     description: string,
     technologies: string[],
     links: any[],
     motives: any[],
     howTos: any[],
-    designChoices: string[],
-    challenges: string[],
-    keyLearnings: string[],
-    futureImprovements: string[],
-    updates: string[]
+    designChoices: any[],
+    challenges: any[],
+    keyLearnings: any[],
+    futureImprovements: any[],
+    updates: any[]
 }
 
 type updatesProps  = {
@@ -65,27 +67,27 @@ const Project : React.FC<projectCardProps> = (props) => {
                 ))}
             </div>
             <div className='project-post-design-choices' >
-                <h3>Design Choices</h3>
+                <h3>Implementation Choices</h3>
                 {props.designChoices.map((designChoice) => (
-                    <p>{designChoice}</p>
+                    <PostContent {...designChoice}></PostContent>
                 ))}
             </div>
             <div className='project-post-challenges' >
                 <h3>Biggest Challenges</h3>
                 {props.challenges.map((challenge) => (
-                    <p>{challenge}</p>
+                    <PostContent {...challenge}></PostContent>
                 ))}
             </div>
             <div className='project-post-key-learnings' >
                 <h3>Key Learnings</h3>
                 {props.keyLearnings.map((keyLearning) => (
-                    <p>{keyLearning}</p>
+                    <PostContent {...keyLearning}></PostContent>
                 ))}
             </div>
             <div className='project-post-future-improvements' >
                 <h3>Future Improvements</h3>
                 {props.futureImprovements.map((futureImprovement) => (
-                    <p>{futureImprovement}</p>
+                    <PostContent {...futureImprovement}></PostContent>
                 ))}
             </div>
             {props.updates.length === 0 ? (<div></div>) : 

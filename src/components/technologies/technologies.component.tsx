@@ -8,7 +8,6 @@ import git from '../../assets/git.svg'
 import react from '../../assets/react.svg'
 
 import './technologies.styles.scss'
-import { Link } from '@material-ui/core'
 
 const technologies = [
     { "site": "https://www.python.org", "source": python, "title": "Python" },
@@ -27,22 +26,14 @@ const Technologies = () => {
             <p>Tech Stack</p>
             <div className='tech-list'>
                 {technologies.map((tech) => (
-                    <div className='tech-container' >
-                        <a href={tech.site} target='_blank' rel=' noopener noreferrer'>
+                    <a className='tech-link' href={tech.site} target='_blank' rel='noopener noreferrer'>
+                        <div className='tech-container' >
                             <img className='my-tech-item' src={tech.source} alt='' />
-                        </a>
-                        <h5 className='tech-title' >{tech.title}</h5>
-                    </div>
+                            <h5 className='tech-title' >{tech.title}</h5>
+                        </div>
+                    </a>
                 ))}
             </div>
-{/*             
-            <img className='my-tech-item' src={java} width="auto" height={75} alt='' />
-            <img className='my-tech-item' src={c} width="auto" height={75} alt='' />
-            <img className='my-tech-item' src={flask} width="auto" height={75} alt='' />
-            <img className='my-tech-item' src={pandas} width="auto" height={75} alt='' />
-            <img className='my-tech-item' src={postgresql} width="auto" height={75} alt='' />
-            <img className='my-tech-item' src={git} width="auto" height={75} alt='' />
-            <img className='my-tech-item' src={react} width="auto" height={75} alt='' /> */}
         </div>
     )
 }

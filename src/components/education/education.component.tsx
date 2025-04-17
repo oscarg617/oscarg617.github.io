@@ -50,9 +50,6 @@ export default function Education() {
                 <li>
                   Upper-division GPA: 3.7
                 </li>
-                {/* <li>
-                  Relevant coursework: Programming Languages, Databases, Computer Architecture, Machine Learning, Computer Security, Operating Systems, Efficient Algorithms
-                </li> */}
               </ul>
             </TimelineContent>
           </TimelineItem>
