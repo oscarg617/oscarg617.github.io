@@ -228,10 +228,6 @@ ns_stats = base.nba_stats()
 `
         },
         {
-            "type": "paragraph",
-            "content": "problem: how to reduce the amount of http requests? the lookup operation i borrowed from vishaal agartha took x requests just to confirm the name of the nba player. additionally, for every year in the input, a request needed to be made to find the defensive strength of each time during that year, so that I could then see which of those teams fall into the desired drtg range. i noted that the list of names was something that never changed, outside of a rookies that are drafted each year. as for the team defensive ratings, it there only at most 30 teams in the league through nba history, which meant it wasn't that much data, but it was relatively a lot of time spent for those requests. thus, i decided that a good solution would be to have all the names of every nba player, and all the required defensive metrics for every team saved to a csv file on the python package, which is a sort of memoization that is done one time on my machine so that the user never has to do it."
-        },
-        {
             "type": "subheading",
             "content": "Limiting HTTP Requests"
         },
