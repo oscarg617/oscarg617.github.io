@@ -62,7 +62,7 @@ docker-compose down    # stop the server
     "challenges": [
         {
             "type": "paragraph",
-            "content": "I successfully dockerized the backend and frontend separately by writing two Dockerfiles, building individual images, and then running them as separate containers. While this worked perfectly fine to get the site running, I wanted to be able to merge the backend and frontend so that it only took one command to run the application. "
+            "content": "I successfully dockerized the backend and frontend separately by writing two Dockerfiles, building individual images, and then running them as separate containers. While this worked perfectly fine to get the site running, I wanted to be able to merge the backend and frontend so that it only took one command to run the application."
         },
         {
             "type": "paragraph",
@@ -74,20 +74,14 @@ docker-compose down    # stop the server
         },
         {
             "type": "paragraph",
-            "content": "The solution came when I learned about Docker Compose, which is a tool designed for running multi-container applications – exactly the thing I needed. As a result, I created a docker-compose.yml file (shown below), and I was able to keep my services separate while also allowing me to run my application with a single command."
+            "content": "The solution came when I learned about Docker Compose, which is a tool designed for running multi-container applications. As a result, I created a docker-compose.yml file (shown below), and I was able to keep my services separate while also allowing me to run my application with a single command."
         }
     ],
     "keyLearnings": [
-        // {
-        //     "type": "paragraph",
-        //     "content": "Learn how frontend works with backend."
-        // },
-    ],
-    "futureImprovements": [
-        // {
-        //     "type": "paragraph",
-        //     "content": "Show player stats for each game"
-        // },
+        {
+            "type": "paragraph",
+            "content": "This project significantly strengthened my understanding of full-stack development. I learned how to effectively structure a backend API that serves exactly the data needed by the frontend in a convenient form to make rendering straightforward. Working with Docker taught me the value of containerization for creating consistent, portable environments and the power of Docker Compose for orchestrating multi-container applications. I also gained valuable experience in evaluating the pros and cons of frameworks in order to satisfy actual requirements."
+        },
     ],
     "updates": []
 }
