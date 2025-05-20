@@ -16,7 +16,7 @@ export const dans =     {
     "motives": [
         {
             "type": "paragraph",
-            "content": "As a basketball fan, I always felt that basic box-score statistics often failed to capture a player's true performance. They lacked crucial context—particularly regarding the quality of opposition faced. Of course, most fans of the sport are able to mentally apply this context, but over time, this context is lost and only the numbers remain.",
+            "content": "As a basketball fan, I always felt that basic box-score stats often failed to tell the whole story on a player’s performance. One of the most important pieces of context that is missing is the quality of the opposing team, particularly their defense. Of course, most fans of the sport are able to mentally apply this context, but over time, this context is lost, and only the numbers remain.",
 
         },
         {
@@ -25,17 +25,17 @@ export const dans =     {
         },
         {
             "type": "paragraph",
-            "content": "I found a solution when watching a video on Thinking Basketball's YouTube channel, which provided an approach to accounting for opposing defensive strength by linearly scaling points-per-game by their opponents' defensive rating. However, there was no publicly accessible website or database where fans could view these adjusted statistics across players' careers. Attempting to calculate these metrics manually would likely be time-consuming and inconsistent.",
+            "content": "I found a solution when watching a video on Thinking Basketball's YouTube channel, which provided an approach to accounting for opposing defensive strength by linearly scaling points-per-game by their opponents' defensive rating. However, there was no source where fans could view these adjusted stats across players' careers, and attempting to calculate these stats manually would be time-consuming.",
         },
         {
             "type": "paragraph",
-            "content": "This gap between available data and meaningful analysis inspired me to create DANS (Defense Adjusted NBA Stats) - a Python package that adjusts player statistics based on the defensive strength of their opponents."
+            "content": "This gap between available data and meaningful analysis inspired me to create DANS (Defense Adjusted NBA Stats): a Python package that adjusts player statistics based on the defensive strength of their opponents."
         }
     ],
     "howTos": [
         {
             "type": "paragraph",
-            "content": "The DANS package offers three main endpoints to access and analyze NBA statistics with defensive adjustments. This guide shows you how to implement each one in a Python projects."
+            "content": "The DANS package includes the following three endpoints:"
         },
         {
             "type": "subheading",
@@ -43,7 +43,7 @@ export const dans =     {
         },
         {
             "type": "paragraph",
-            "content": "Get a player's basic statistical averages with defensive rating filters and different formatting options."
+            "content": "Get a player's statistical averages against teams within a range defensive ratings."
         },
         {
             "type": "code",
@@ -66,7 +66,7 @@ print(stats.bball_ref())  # Access stats from Basketball Reference
         },
         {
             "type": "paragraph",
-            "content": "Returns: A DataFrame with [points, rebounds, assists, true shooting %, relative true shooting %, opponent defensive rating]"
+            "content": "This endpoint returns dataframe with the following columns: points, rebounds, assists, true shooting percentage, relative true shooting percentage, and opponent defensive rating."
         },
         {
             "type": "subheading",
@@ -74,7 +74,7 @@ print(stats.bball_ref())  # Access stats from Basketball Reference
         },
         {
             "type": "paragraph",
-            "content": "Retrieve detailed game logs for a player across specified seasons."
+            "content": "Get game logs for a player within a range of seasons."
         },
         {
             "type": "code",
@@ -94,7 +94,7 @@ print(logs.bball_ref())  # Access stats from Basketball Reference
         },
         {
             "type": "paragraph",
-            "content": "Returns: A comprehensive DataFrame with game-by-game statistics including points, rebounds, assists, and shooting percentages."
+            "content": "This endpoint returns a dataframe including points, rebounds, assists, and shooting percentages, and other basic stats."
         },
         {
             "type": "subheading",
@@ -102,7 +102,7 @@ print(logs.bball_ref())  # Access stats from Basketball Reference
         },
         {
             "type": "paragraph",
-            "content": "Find teams that match specific defensive rating criteria across seasons."
+            "content": "Find teams that fall within a range of defensive ratings."
         },
         {
             "type": "code",
@@ -120,29 +120,25 @@ print(teams.nba_stats())  # Access stats from NBA Stats
         },
         {
             "type": "paragraph",
-            "content": "Returns: A DataFrame listing teams with their season, team name, defensive rating (DRTG), and opponent true shooting percentage (OPP_TS)."
+            "content": "This endpoint returns a dataframe listing teams with their season, team name, defensive rating, and opponent true shooting percentage."
         }
     ],
     "designChoices": [
         {
             "type": "paragraph",
-            // "content": "where should i get stats? bball-ref and nba-stats. main difference between them: their defensive rating formula is different, which is very relevant because defensive rating is an input to the endpoints. neither have more authority over the other, so i decided to include both of them and allow users to choose which stat they prefer.",
-            "content": "I chose to use both Basketball-Reference and NBA-Stats as my data sources, as they are the two most used and trusted sources for NBA data. The main difference between them is their defensive rating formula, which is particularly important since defensive rating is an input to my endpoints. Since neither source has definitive authority over the other, I decided to include both and allow users to choose which site's implementation of the stat they prefer."
+            "content": "I chose to use both Basketball-Reference and NBA-Stats as my data sources, as they are the two most used sources for NBA stats. The main difference between them is their defensive rating formula, which is particularly important since defensive rating is an input to my endpoints. Since neither source has definitive authority over the other, I decided to include both and allow users to choose which site's implementation of the stat they prefer."
         },
         {
             "type": "paragraph",
-            // "content": "how should i retrieve the stats? beautiful soup because the sites do not render data dynamically, which negates the use of selenium, which performs slower.",
-            "content": "For web scraping, the two libraries I considered using were BeautifulSoup and Selenium. BeautifulSoup is faster than Selenium for scraping data from static web pages, whereas Selenium has the ability to fetch dynamically-rendered resources. Since neither of the websites render data dynamically, it would have been unnecessarily resource intensive to use Selenium; so, I chose BeautifulSoup."
+            "content": "For web scraping, the two libraries I considered using were BeautifulSoup and Selenium. BeautifulSoup is faster than Selenium for scraping data from static web pages, whereas Selenium has the ability to fetch dynamically-rendered resources. Since neither of the websites render data dynamically, it would have been unnecessarily resource intensive to use Selenium, so I chose BeautifulSoup."
         },
         {
             "type": "paragraph",
-            // "content": "how should i organize/filter stats? Pandas because it seemlessly takes on the format of the tables provided in bball-ref and nba-stats. Easy to vectorize actions onto the whole data. Numpy also does this, but pandas is prettier and thus makes for more readable code, especially when chaining multiple methods together which i knew i needed to do",
-            "content": "I selected Pandas as my primary data manipulation tool because it seamlessly handles the tabular format of the data provided by Basketball-Reference and NBA-Stats. While NumPy could have performed similar vector operations, Pandas offered more readable code, especially when chaining multiple methods together, which I knew would be a common pattern throughout the project. This readability was especially important for easier debugging and maintaining high code clarity throughout the development process."
+            "content": "I chose Pandas to handle the data because it fits with the format of the data provided by Basketball-Reference and NBA-Stats. While NumPy could have performed similar vector operations, Pandas makes for more readable code when chaining multiple methods together."
         },
         {
             "type": "paragraph",
-            // "content": "there are a lot of http requests being made - how can we avoid Error 429? Class wrapper over requests module that limits requests. The class wrapper includes functionality tailored towards requests to bball-ref.com and stats.nba.com by handling headers and parameters for various endpoints: player logs, per_100 stats, opponent faced, data format, season_type, etc.",
-            "content": "To handle rate limiting when making numerous HTTP requests to these sites, I developed a custom class wrapper that handles any function that makes HTTP requests, primarily wrapping the 'get' method of the requests module. This wrapper implements request limiting functionality specifically tailored for Basketball-Reference and NBA-Stats by handling appropriate headers and parameters for various endpoints. The class manages requests for player logs, per-100 stats, opponent data, different data formats, and season types while ensuring we stay within acceptable request frequency limits."
+            "content": "To handle any issue with rate limiting, I created a wrapper that ensures that all functions that make HTTP requests are limited to less than 20 requests per minute in total."
         },
     ],
     "challenges": [
@@ -152,7 +148,7 @@ print(teams.nba_stats())  # Access stats from NBA Stats
         },
         {
             "type": "paragraph",
-            "content": "Initially, I created separate modules for Basketball-Reference and NBA-Stats. This made sense because each site required different methods for web scraping and provided slight variations in advanced stats. However, it seemed more sensible to ensure that the three core endpoints were only defined once, rather than being split across two modules. Another issue with this design was that it was possible to import utility functions directly from the import block. These functions naturally exist to ensure the code is modular and concise, but they are not functions that I want a user to see when importing the actual endpoints because they break the abstraction barrier (shown below)."
+            "content": "Initially, I created separate modules for Basketball-Reference and NBA-Stats. This made sense because each site required different methods for web scraping and provided slight variations in advanced stats. However, it seemed to make more sense to ensure that the three endpoints were defined only once. Another issue with this design was that it was possible to import utility functions from the import block, and these are not functions that I want a user to see when importing the actual endpoints because they break the abstraction barrier (shown below)."
         },
         {
             "type": "image",
@@ -160,11 +156,11 @@ print(teams.nba_stats())  # Access stats from NBA Stats
         },
         {
             "type": "paragraph",
-            "content": "To address the two-module problem, I eliminated the two-module layout and instead defined each endpoint once. I then introduced a new 'Site' parameter for each endpoint in order to allow users to choose between Basketball-Reference and NBA-Stats, and modified each endpoint to handle web-scraping for both sites."
+            "content": "To address the two-module problem, I eliminated the two-module layout and instead defined each endpoint once. I then introduced a new ‘Site’ parameter for each endpoint in order to allow users to choose between Basketball-Reference and NBA-Stats, and modified each endpoint to handle web-scraping for both sites."
         },
         {
             "type": "paragraph",
-            "content": "This successfully eliminated possible confusion with two modules, but the problem with the import block still remained. Additionally, the endpoints began to look messy and overcrowded with parameters after the introduction of the Site parameter. Another insufficiency this solution shed light on was the lack of reusability for the endpoints. In other words, a user would need to invoke the endpoints separately for each site, and thus repeatedly input the same list of data: player name, year range, defensive rating range, data format, season type, and site."
+            "content": "This successfully eliminated possible confusion with two modules, but the problem with the import block still remained. Additionally, the endpoints began to look messy and overcrowded with parameters after the introduction of the Site parameter. Another insufficiency this solution revealed was the lack of reusability for the endpoints. In other words, a user would need to invoke the endpoints separately for each site, and thus repeatedly input the same list of data: player name, year range, defensive rating range, data format, season type, and site."
         },
         {
             "type": "code",
@@ -196,7 +192,7 @@ site=Site.nba_stats
         },
         {
             "type": "paragraph",
-            "content": "In search of a solution to these issues, I explored other NBA-related GitHub repositories to see how their endpoints are designed. The 'nba_api' repository caught my eye for how it leveraged classes to construct each of its endpoints, even though the classes only had one purpose: to fetch data from NBA-stats. Not only did this design create a nice uniformity between all endpoints, it also guaranteed that helper functions would not be visible from the import block."
+            "content": "In search of a solution to these issues, I explored other NBA-related GitHub repositories to see how their endpoints are designed. The ‘nba_api’ repository caught my eye for how it leveraged classes to construct each of its endpoints, even though the classes only had one purpose: to fetch data from NBA-stats. Not only did this design create a nice uniformity between all endpoints, it also guaranteed that helper functions would not be visible from the import block."
         },
         {
             "type": "paragraph",
@@ -233,44 +229,50 @@ ns_stats = base.nba_stats()
         },
         {
             "type": "paragraph",
-            "content": "Since Basketball-Reference and NBA-Stats have rate limits of 20 requests per minute, optimizing network traffic was crucial. My initial implementation required these requests to get a player's stats (where N represents years inputted and M represents games played): (1) one request to find the player’s URL path, (2) N requests to fetch the player’s game logs, (3) N requests to fetch the teams that fall within the defensive-rating range, and (4) requests to calculate possession counts (N for NBA-Stats and M for Basketball-Reference)."
+            "content": "It was important to optimize network traffic because Basketball-Reference and NBA-Stats have rate limits of 20 requests per minute. My initial implementation required the following amount of requests to get a player's stats (where N represents years inputted and M represents games played): one request to find the player’s URL path, N requests to fetch the player’s game logs, N requests to fetch the teams that fall within the defensive-rating range, and requests to calculate possession counts (N for NBA-Stats and M for Basketball-Reference)."
         },
         {
             "type": "paragraph",
-            "content": "'Pace' is the key statistic that allows me to calculate possession counts, and I previously found this stat on an individual game’s boxscore page for Basketball-Reference. After exploring alternatives, I discovered team gamelog pages that display advanced stats –– including Pace –– for every game a team played in a season. I altered my implementation to scrape pace from these pages, reducing the number of requests to find possession counts to N."
+            "content": "Pace is the statistic that allows me to calculate possession counts, and I previously found this stat on an individual game’s boxscore page for Basketball-Reference. However, after exploring the website a bit more, I discovered that team gamelog pages display advanced stats for every game a team played in a season. I changed my implementation to scrape pace from these pages, which reduced the number of requests to find possession counts to N."
         },
         {
             "type": "paragraph",
-            "content": "This improvement brought the total requests to 3N + 1, which was still unsatisfactory given the rate limit of 20 requests per minute. This meant we could only request data across 6 years before waiting a full minute to continue."
+            "content": "This brought the total requests down to 3N + 1, which meant we could only request data across 6 years before waiting a full minute to continue, which is still pretty insufficient."
         },
         {
             "type": "paragraph",
-            "content": "I researched efficient web-scraping techniques and found two that were most common: multi-threading and memoization. Multi-threading wasn't viable due to my architecture's sequential dataflow. However, memoization was applicable to two tasks: (1) creating a comprehensive player-URL lookup table, since the list of NBA players only expands annually during drafts, and (2) building a lookup table for teams within defensive-rating ranges, covering all team-seasons since 1971 through present day (approximately 1,650 entries with 30 teams × 55 seasons)—the complete period for which opponent-adjusted statistics are available through DANS."
+            "content": "I researched common web-scraping techniques to improve efficiency and found that two stood out: multi-threading and memoization. Multi-threading was not viable due to my architecture's sequential data flow. However, memoization would allow me to create a player-URL lookup table, since the list of NBA players only expands annually during drafts, and a lookup table for teams within defensive-rating ranges, covering all team-seasons since 1971 through the present day (approximately 1,650 entries, with 30 teams and 55 seasons)."
         },
         {
             "type": "paragraph",
-            "content": "These optimizations reduced total requests to 2N, allowing us to process 10 years of data before hitting rate limits!"
+            "content": "These optimizations reduced the total number of requests to 2N, allowing us to process 10 years of data before hitting rate limits!"
         }
     ],
     "keyLearnings": [
-        // {
-        //     "type": "paragraph",
-        //     "content": "How to properly document and create easy to use endpoints: thinking from the user's perspective",
-        // },
-        // {
-        //     "type": "paragraph",
-        //     "content": "finding other software/tools that exist that do the job i want, rather than making the software myself. (examples: rate limiting on requests, script to find all nba player names)",
-        // },
-    ],
-    "futureImprovements": [
-        // {
-        //     "type": "paragraph",
-        //     "content": "in terms of endpoints, i'd like to include an endpoint that uses play-by-play data so that possessions are more accurately calculated"
-        // },
-        // {
-        //     "type": "paragraph",
-        //     "content": "in terms of performance, i'd like to use team advanced game logs so that i can access the pace of each game in a season from one request, rather than one request per game."
-        // },
+        {
+            "type": "subheading",
+            "content": "Ease of Use and Documentation"
+        },
+        {
+            "type": "paragraph",
+            "content": "I learned how to make better design decisions by simply thinking from the user’s perspective. This led me to redefine my endpoints as classes rather than functions, leading to a simpler understanding for anyone using my package. I also learned how to write comprehensive documentation by detailing the usage of the endpoints and breaking down the calculations behind the various data formats. It was important for me to recognize that users do not share my deep knowledge of the endpoints and formulas, which can be a hard thing to do when working on a project for a long time, so I pushed myself to focus on describing each detail."
+        },
+        {
+            "type": "subheading",
+            "content": "Not Reinventing the Wheel"
+        },
+        {
+            "type": "paragraph",
+            "content": "I discovered that an element of good engineering is knowing when to use existing tools rather than creating my own tool from scratch. When facing rate limiting challenges, I started building my own solution until I realized that rate limiting was most likely a common issue and it was likely that a solution already existed, which it did (a Python decorator). In turn, I found that using solutions that do the job saves time and actually leads to more reliable code."
+        },
+        {
+            "type": "subheading",
+            "content": "Optimizations"
+        },
+        {
+            "type": "paragraph",
+            "content": "I learned to identify the biggest bottlenecks in my projects, such as the number of HTTP requests, and putting my efforts to optimize those bottlenecks instead of focusing on small details that don’t add much value for users. For example, to reduce the number of HTTP requests, I implemented memoization strategies, which reduced requests from 3N+1 to 2N."
+        },
     ],
     "updates": []
 }
