@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.11528f93.css",
-    "main.js": "/static/js/main.32b79821.js",
+    "main.css": "/static/css/main.56558b25.css",
+    "main.js": "/static/js/main.b3319547.js",
     "static/js/919.8890900b.chunk.js": "/static/js/919.8890900b.chunk.js",
     "static/media/oscar.jpg": "/static/media/oscar.35225f49241bf717c6d2.jpg",
     "static/media/kobe.gif": "/static/media/kobe.1261630c20b2b43feef2.gif",
@@ -9,8 +9,11 @@
     "static/media/cs189.png": "/static/media/cs189.7a367de93e28824ff958.png",
     "static/media/nba-scoreboard.png": "/static/media/nba-scoreboard.4ed5ba200b7945700a02.png",
     "static/media/cs164.png": "/static/media/cs164.ed1ff47cdfa0f60da678.png",
+    "static/media/get-bball-stats.png": "/static/media/get-bball-stats.92e7eb8ecaa1ccb004e4.png",
     "static/media/bad_import_block.png": "/static/media/bad_import_block.06657948c428727b4937.png",
+    "static/media/getbballstatsexample0.png": "/static/media/getbballstatsexample0.619cb86ab8684d556418.png",
     "static/media/postgresql.svg": "/static/media/postgresql.b3dcd1914843b0aa1b77e3e662c0543d.svg",
+    "static/media/getbballstatsexample1.png": "/static/media/getbballstatsexample1.62aacbde9083d94497e5.png",
     "static/media/cs162.png": "/static/media/cs162.c6d9ac944ce580623f69.png",
     "static/media/dans.png": "/static/media/dans.56c9669c5ce94f23c7b3.png",
     "static/media/berkeley.webp": "/static/media/berkeley.ed223388dec59551be0b.webp",
@@ -26,12 +29,12 @@
     "static/media/python.svg": "/static/media/python.68bf143f037a5de1f7b32e42787ec726.svg",
     "static/media/pandas.svg": "/static/media/pandas.b3e46be413b43a562fa619f9f13f388a.svg",
     "index.html": "/index.html",
-    "main.11528f93.css.map": "/static/css/main.11528f93.css.map",
-    "main.32b79821.js.map": "/static/js/main.32b79821.js.map",
+    "main.56558b25.css.map": "/static/css/main.56558b25.css.map",
+    "main.b3319547.js.map": "/static/js/main.b3319547.js.map",
     "919.8890900b.chunk.js.map": "/static/js/919.8890900b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.11528f93.css",
-    "static/js/main.32b79821.js"
+    "static/css/main.56558b25.css",
+    "static/js/main.b3319547.js"
   ]
 }
