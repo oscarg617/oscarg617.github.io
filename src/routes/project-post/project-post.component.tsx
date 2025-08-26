@@ -25,12 +25,12 @@ interface projectCardProps  {
     description: string,
     technologies: string[],
     links: any[],
+    note: string,
     motives: any[],
     howTos: any[],
     designChoices: any[],
     challenges: any[],
     keyLearnings: any[],
-    futureImprovements: any[],
     updates: any[]
 }
 
@@ -53,6 +53,8 @@ const Project : React.FC<projectCardProps> = (props) => {
                     <a className={`project-post-link ${link.linkType.toLowerCase().split(' ').join('-') }`} target="_blank" rel="noopener noreferrer" href={link.link}>{link.linkType}</a>
                 ))}
                 </ul>
+
+            <i>{props.note}</i>
 
             <div className='project-post-motive' >
                 <h3>Project Inspiration</h3>
@@ -84,21 +86,15 @@ const Project : React.FC<projectCardProps> = (props) => {
                     <PostContent {...keyLearning}></PostContent>
                 ))}
             </div>
-            <div className='project-post-future-improvements' >
-                <h3>Future Improvements</h3>
-                {props.futureImprovements.map((futureImprovement) => (
-                    <PostContent {...futureImprovement}></PostContent>
-                ))}
-            </div>
             {props.updates.length === 0 ? (<div></div>) : 
                 <div className='project-post-updates'>
                     <h3>Updates</h3>
-                    {/* {props.updates.map((update: updatesProps) => (
+                    {props.updates.map((update: updatesProps) => (
                         <div className='project-post-update'>
                             <h4>{update.title}</h4>
                             <p>{update.description}</p>
                         </div>
-                    ))} */}
+                    ))}
                 </div>
             }
         </div>

@@ -9,10 +9,11 @@ export const getBBallStats = {
             "linkType": "Source Code"
         },
         {
-            "link": "https://www.getbballstats.com/",
+            "link": "https://www.dansball.com/",
             "linkType": "Website"
         }
     ],
+    "note": "Note: Original website discontinued as of 8/25/2025, replaced by DANS website",
     "motives": [
         {
             "type": "paragraph",

@@ -31,7 +31,7 @@ const Intro = () => {
         <div className='intro-container'>
             <div className='intro-wrapper'>
                 <h1 className='name-intro' >Oscar Gutierrez</h1>
-                <p className='my-desc' >22 year-old software engineer with a knack for being bad at video games.</p>
+                <p className='my-desc' >23 year-old software engineer with a knack for being bad at video games.</p>
                 <p className='my-desc' >I like applying my developer skills to my interests, playing with my dog, and trying to improve my 0.83 KD in Warzone.</p>
                 <Footer />
             </div>

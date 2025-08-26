@@ -11,8 +11,13 @@ export const dans =     {
         {
             "link": "https://pypi.org/project/dans",
             "linkType": "PyPi Package"
+        },
+        {
+            "link": "https://www.dansball.com/",
+            "linkType": "Website"
         }
     ],
+    "note": "",
     "motives": [
         {
             "type": "paragraph",

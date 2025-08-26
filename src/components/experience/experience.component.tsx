@@ -8,6 +8,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Icon from '@material-ui/core/Icon';
 import rma from '../../assets/rma.svg';
+import dans from '../../assets/dansball.png';
 import { CCollapse, CCard, CCardBody } from '@coreui/react';
 
 import './experience.styles.scss'
@@ -21,6 +22,42 @@ const Experience = () => {
         <CCard>
         <CCardBody>
             <Timeline  position="right" sx={{ padding: '0px' }}>
+                <TimelineItem className='exp-tl-item'  >
+                    <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
+                    <TimelineSeparator className='exp-tl-sep' >
+                        <TimelineConnector  className='exp-tl-con' />
+                        <div>
+                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='exp-tl-dot' >
+                                <Icon className='exp-timeline-icon'>
+                                    <img className='exp-svg-image-dans' src={dans} alt=""/>
+                                </Icon>
+                            </TimelineDot>
+                        </div>
+                        <TimelineConnector />
+                    </TimelineSeparator>
+                    <TimelineContent className='exp-tl-cont' sx={{ py: '25px', px: 2 }}>
+                        <Typography className='exp-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
+                            Feb 2025 - Present
+                        </Typography>
+                        <Typography className='exp-tl-type exp-title' variant="subtitle1" px={{ color: "black" }} >
+                            DANS
+                        </Typography>
+                        <Typography className='exp-tl-type' variant="subtitle2" px={{ color: "gray" }} >
+                            Software Engineer
+                        </Typography>
+                        <ul>
+                            <li>
+                            Founded sports analytics startup developing NBA statistics platform that adjusts player performance based on opponent defensive strength and pace
+                            </li>
+                            <li>
+                            Built end-to-end data pipeline processing NBA game logs using Python, PostgreSQL, and AWS to generate contextual performance insights
+                            </li>
+                            <li>
+                            Developed full-stack web application (TypeScript/React/AWS) and open-source Python package distributed via PyPI
+                            </li>
+                        </ul>
+                    </TimelineContent>
+                </TimelineItem>
                 <TimelineItem className='exp-tl-item'  >
                     <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
                     <TimelineSeparator className='exp-tl-sep' >

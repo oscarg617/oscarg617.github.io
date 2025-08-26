@@ -9,6 +9,7 @@ export const nbaScoreboard = {
             "linkType": "Source Code"
         }
     ],
+    "note": "",
     "motives": [
         {
             "type": "paragraph",
