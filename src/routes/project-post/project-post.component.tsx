@@ -34,6 +34,7 @@ interface projectCardProps  {
     updates: any[]
 }
 
+
 type updatesProps  = {
     title: string,
     description: string
