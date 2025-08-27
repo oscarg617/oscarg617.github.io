@@ -38,7 +38,7 @@ export default function Education() {
             </TimelineSeparator>
             <TimelineContent className='edu-tl-cont' sx={{ py: '25px', px: 2 }}>
               <Typography className='edu-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
-                Aug 2020 - Dec 2024
+                Aug. 2020 - Dec. 2024
               </Typography>
               <Typography className='edu-tl-type ed-title' variant="subtitle1" px={{ color: "black" }} >
                 University of California, Berkeley

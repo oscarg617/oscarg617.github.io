@@ -16,36 +16,36 @@ import './experience.styles.scss'
 
 const Experience = () => {
     return (
-    <div className='experience' >
+    <div className='experience' style={{marginTop: '25px'}} >
         <p>Experience</p>
         <CCollapse visible={true} >
         <CCard>
         <CCardBody>
-            <Timeline  position="right" sx={{ padding: '0px' }}>
-                <TimelineItem className='exp-tl-item'  >
+            <Timeline  position="right" sx={{ padding: '0px', margin: '0px' }}>
+                <TimelineItem className='exp-tl-item' sx={{margin: '0px', padding: '0px', position: 'relative', maxWidth: '700px'}} >
                     <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
-                    <TimelineSeparator className='exp-tl-sep' >
-                        <TimelineConnector  className='exp-tl-con' />
+                    <TimelineSeparator className='exp-tl-sep' sx={{margin: '0px', padding: '0px'}} >
+                        <TimelineConnector  className='exp-tl-con' sx={{margin: '0px', padding: '0px', position: 'absolute'}} />
                         <div>
-                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='exp-tl-dot' >
-                                <Icon className='exp-timeline-icon'>
-                                    <img className='exp-svg-image-dans' src={dans} alt=""/>
+                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, padding: 0}} className='exp-tl-dot' >
+                                <Icon className='exp-timeline-icon' style={{margin: 0, padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', width: '2em', height: '2em'}} >
+                                    <img className='exp-svg-image-dans' style={{width: '1.8em', height: 'auto', backgroundSize: 'contain', marginTop: '1px', display: 'block'}} src={dans} alt=""/>
                                 </Icon>
                             </TimelineDot>
                         </div>
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent className='exp-tl-cont' sx={{ py: '25px', px: 2 }}>
-                        <Typography className='exp-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
-                            Feb 2025 - Present
+                    <TimelineContent className='exp-tl-cont' sx={{margin: 0, padding: 0, marginLeft: '3%', paddingBottom: '10px'}}>
+                        <Typography className='exp-tl-type' variant="body2" sx={{fontSize: '13px'}} px={{ color: "gray" }} >
+                            Feb. 2025 - Present
                         </Typography>
-                        <Typography className='exp-tl-type exp-title' variant="subtitle1" px={{ color: "black" }} >
+                        <Typography className='exp-tl-type' variant="body2" sx={{fontWeight: '501', padding: 0, margin: 0, fontSize: '1rem'}} px={{ color: "black" }} >
                             DANS
                         </Typography>
-                        <Typography className='exp-tl-type' variant="subtitle2" px={{ color: "gray" }} >
+                        <Typography className='exp-tl-type' variant="body2" sx={{paddingBottom: '5px'}} px={{ color: "gray" }} >
                             Software Engineer
                         </Typography>
-                        <ul>
+                        <ul style={{marginBottom: '0px', padding: 0, paddingLeft: '1em', fontSize: '0.9rem', listStyle: 'disc'}}>
                             <li>
                             Founded sports analytics startup developing NBA statistics platform that adjusts player performance based on opponent defensive strength and pace
                             </li>
@@ -58,30 +58,30 @@ const Experience = () => {
                         </ul>
                     </TimelineContent>
                 </TimelineItem>
-                <TimelineItem className='exp-tl-item'  >
+                <TimelineItem className='exp-tl-item' sx={{margin: '0px', padding: '0px', position: 'relative', maxWidth: '700px'}} >
                     <TimelineOppositeContent sx={{ display: 'none' }}></TimelineOppositeContent>
-                    <TimelineSeparator className='exp-tl-sep' >
-                        <TimelineConnector  className='exp-tl-con' />
+                    <TimelineSeparator className='exp-tl-sep' sx={{margin: '0px', padding: '0px'}} >
+                        <TimelineConnector  className='exp-tl-con' sx={{margin: '0px', padding: '0px', position: 'absolute'}} />
                         <div>
-                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, px: '20px', py: '40px'}} className='exp-tl-dot' >
-                                <Icon className='exp-timeline-icon'>
-                                    <img className='exp-svg-image-rma' src={rma} alt=""/>
+                            <TimelineDot sx={{ backgroundColor: 'white', border: 1, borderColor: '#eeeeee', margin: 0, padding: 0}}  className='exp-tl-dot' >
+                                <Icon className='exp-timeline-icon' style={{margin: 0, padding: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', width: '2em', height: '2em'}} >
+                                    <img className='exp-svg-image-rma' style={{width: '1.5em', height: 'auto', backgroundSize: 'contain'}} src={rma} alt=""/>
                                 </Icon>
                             </TimelineDot>
                         </div>
                         <TimelineConnector />
                     </TimelineSeparator>
-                    <TimelineContent className='exp-tl-cont' sx={{ py: '25px', px: 2 }}>
-                        <Typography className='exp-tl-type' variant="body2" component="span" px={{ color: "gray" }} >
-                            June 2023 - Aug 2023
+                    <TimelineContent className='exp-tl-cont'  sx={{margin: 0, padding: 0, marginLeft: '3%'}}>
+                        <Typography className='exp-tl-type' variant="body2" sx={{fontSize: '13px'}} px={{ color: "gray" }} >
+                            Jun. 2023 - Aug. 2023
                         </Typography>
-                        <Typography className='exp-tl-type exp-title' variant="subtitle1" px={{ color: "black" }} >
+                        <Typography className='exp-tl-type' variant="body2" sx={{fontWeight: '501', paddingBottom: '0', fontSize: '1rem'}} px={{ color: "black" }} >
                             Risk Management Association
                         </Typography>
-                        <Typography className='exp-tl-type' variant="subtitle2" px={{ color: "gray" }} >
+                        <Typography className='exp-tl-type' variant="body2" sx={{paddingBottom: '5px'}} px={{ color: "gray" }} >
                             Software Engineer Intern
                         </Typography>
-                        <ul>
+                        <ul style={{marginBottom: '0px', padding: 0, paddingLeft: '1em', fontSize: '0.9rem', listStyle: 'disc'}}>
                             <li>
                             Developed a financial record processing backend to enable vendors to submit records directly from their systems using AWS API Gateway and MySQL 
                             </li>
