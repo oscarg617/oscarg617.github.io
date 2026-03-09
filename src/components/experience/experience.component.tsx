@@ -8,7 +8,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
 import Icon from '@material-ui/core/Icon';
 import rma from '../../assets/rma.svg';
-import dans from '../../assets/dansball.png';
+import dans from '../../assets/basketball.png';
 import { CCollapse, CCard, CCardBody } from '@coreui/react';
 
 import './experience.styles.scss'

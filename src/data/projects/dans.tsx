@@ -5,17 +5,9 @@ export const dans =     {
     "image": require("../../assets/dans.png"),
     "links": [
         {
-            "link": "https://github.com/oscarg617/dans",
-            "linkType": "Source Code"
-        },
-        {
             "link": "https://pypi.org/project/dans",
             "linkType": "PyPi Package"
         },
-        {
-            "link": "https://www.dansball.com/",
-            "linkType": "Website"
-        }
     ],
     "note": "",
     "motives": [

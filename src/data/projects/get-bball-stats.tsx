@@ -7,10 +7,6 @@ export const getBBallStats = {
         {
             "link": "https://github.com/oscarg617/website-lambda",
             "linkType": "Source Code"
-        },
-        {
-            "link": "https://www.dansball.com/",
-            "linkType": "Website"
         }
     ],
     "note": "Note: Original website discontinued as of 8/25/2025, replaced by DANS website",
