@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4c0a7f55.css",
-    "main.js": "/static/js/main.abcf59b3.js",
+    "main.js": "/static/js/main.c7af2462.js",
     "static/js/919.8890900b.chunk.js": "/static/js/919.8890900b.chunk.js",
     "static/media/oscar.jpg": "/static/media/oscar.35225f49241bf717c6d2.jpg",
     "static/media/kobe.gif": "/static/media/kobe.1261630c20b2b43feef2.gif",
@@ -11,31 +11,37 @@
     "static/media/cs164.png": "/static/media/cs164.ed1ff47cdfa0f60da678.png",
     "static/media/get-bball-stats.png": "/static/media/get-bball-stats.92e7eb8ecaa1ccb004e4.png",
     "static/media/bad_import_block.png": "/static/media/bad_import_block.06657948c428727b4937.png",
+    "static/media/basketball.png": "/static/media/basketball.014780d3479c79f2bc40.png",
     "static/media/getbballstatsexample0.png": "/static/media/getbballstatsexample0.619cb86ab8684d556418.png",
     "static/media/postgresql.svg": "/static/media/postgresql.b3dcd1914843b0aa1b77e3e662c0543d.svg",
     "static/media/getbballstatsexample1.png": "/static/media/getbballstatsexample1.62aacbde9083d94497e5.png",
     "static/media/cs162.png": "/static/media/cs162.c6d9ac944ce580623f69.png",
     "static/media/dans.png": "/static/media/dans.56c9669c5ce94f23c7b3.png",
+    "static/media/aws.png": "/static/media/aws.058da8828f97be6cde7c.png",
     "static/media/berkeley.webp": "/static/media/berkeley.ed223388dec59551be0b.webp",
     "static/media/cs161.png": "/static/media/cs161.80588c65f601acaa0e2b.png",
     "static/media/flask.svg": "/static/media/flask.1e2d0074a050c3190c50ecacf8e655ab.svg",
     "static/media/cs186.png": "/static/media/cs186.84c7ec5f39a6ded196a5.png",
     "static/media/react.svg": "/static/media/react.a6a7b32895153cc9194020c1418b2748.svg",
+    "static/media/airflow.png": "/static/media/airflow.8fde0291f76f4a912560.png",
     "static/media/git.svg": "/static/media/git.684d708914a472879fe10e0b2ace6c18.svg",
     "static/media/rma.svg": "/static/media/rma.b21284c211f4945acaf0df338b2776c0.svg",
-    "static/media/dansball.png": "/static/media/dansball.7f160e348e2b9198ffaa.png",
     "static/media/location.png": "/static/media/location.29a7670ae9657012eceb.png",
     "static/media/c.svg": "/static/media/c.fa91ffc6bee88b30c3da4add58dd1073.svg",
+    "static/media/redis.webp": "/static/media/redis.734076610d3790eb15e2.webp",
     "static/media/java.svg": "/static/media/java.6595655a07d387fffc43a65200c88e39.svg",
+    "static/media/docker.webp": "/static/media/docker.8e592d5e5187121a8431.webp",
     "static/media/python.svg": "/static/media/python.68bf143f037a5de1f7b32e42787ec726.svg",
     "index.html": "/index.html",
     "static/media/pandas.svg": "/static/media/pandas.b3e46be413b43a562fa619f9f13f388a.svg",
+    "static/media/django.svg": "/static/media/django.0779fca292c0a723b464bcb7534f802c.svg",
+    "static/media/fastapi.svg": "/static/media/fastapi.e4cdf8d83d0cfd015db9ade11fc961d2.svg",
     "main.4c0a7f55.css.map": "/static/css/main.4c0a7f55.css.map",
-    "main.abcf59b3.js.map": "/static/js/main.abcf59b3.js.map",
+    "main.c7af2462.js.map": "/static/js/main.c7af2462.js.map",
     "919.8890900b.chunk.js.map": "/static/js/919.8890900b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c0a7f55.css",
-    "static/js/main.abcf59b3.js"
+    "static/js/main.c7af2462.js"
   ]
 }
